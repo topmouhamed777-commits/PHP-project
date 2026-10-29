@@ -97,6 +97,10 @@
                 <a href="exercice11.php">Exercice 11</a>
                 <span class="desc">Dessin du haut du sapin en cône sur 6 lignes avec double boucle.</span>
             </li>
+            <li>
+                <a href="fonctions_tableau.php">Exercice : Fonctions sur les Tableaux</a>
+                <span class="desc">Fonctions remplir() (pairs aléatoires), somme() et trier().</span>
+            </li>
         </ul>
     </div>
 </body>
