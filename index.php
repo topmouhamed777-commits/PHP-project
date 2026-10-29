@@ -3,105 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TP 1 - Structures de contrôle et boucles</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            background-color: #f7f9fa;
-            color: #333;
-        }
-        h1 {
-            color: #2c3e50;
-        }
-        .container {
-            max-width: 800px;
-            background: white;
-            padding: 25px 35px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        li {
-            margin: 12px 0;
-            padding: 10px;
-            background: #eef2f7;
-            border-radius: 5px;
-        }
-        a {
-            text-decoration: none;
-            color: #1a73e8;
-            font-weight: bold;
-            font-size: 16px;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .desc {
-            display: block;
-            font-size: 14px;
-            color: #555;
-            margin-top: 4px;
-        }
-    </style>
+    <title>Formulaire d'inscription</title>
+   
 </head>
 <body>
-    <div class="container">
-        <h1>TP 1 : Structure de contrôle et boucles </h1>
-        <p>Mouhamed Top</p>
-        <ul>
-            <li>
-                <a href="exercice1.php">Exercice 1</a>
-                <span class="desc">Affichage des chiffres répétés en triangle (1, 22, 333...).</span>
-            </li>
-            <li>
-                <a href="exercice2.php">Exercice 2</a>
-                <span class="desc">Variable initiale à 2, incrémentée de 3 jusqu'à 30 avec test sur 15.</span>
-            </li>
-            <li>
-                <a href="exercice3.php">Exercice 3</a>
-                <span class="desc">Table de multiplication complète de 1 à 10 dans un tableau HTML.</span>
-            </li>
-            <li>
-                <a href="exercice4.php">Exercice 4</a>
-                <span class="desc">Somme de deux nombres.</span>
-            </li>
-            <li>
-                <a href="exercice5.php">Exercice 5</a>
-                <span class="desc">Table de multiplication de 3 au format tableau (3 x n = résultat).</span>
-            </li>
-            <li>
-                <a href="exercice6.php">Exercice 6</a>
-                <span class="desc">Test si une personne est majeure ou mineure.</span>
-            </li>
-            <li>
-                <a href="exercice7.php">Exercice 7</a>
-                <span class="desc">Menu permettant de choisir un chiffre et afficher les détails correspondants.</span>
-            </li>
-            <li>
-                <a href="exercice8.php">Exercice 8</a>
-                <span class="desc">Moyenne des nombres de 1 à 10 avec boucle for et boucle while.</span>
-            </li>
-            <li>
-                <a href="exercice9.php">Exercice 9</a>
-                <span class="desc">Nombres pairs de 0 à 100 avec les 3 boucles (for, while, do...while).</span>
-            </li>
-            <li>
-                <a href="exercice10.php">Exercice 10</a>
-                <span class="desc">Étoiles en escalier avec une double boucle (*, **, ***...).</span>
-            </li>
-            <li>
-                <a href="exercice11.php">Exercice 11</a>
-                <span class="desc">Dessin du haut du sapin en cône sur 6 lignes avec double boucle.</span>
-            </li>
-            <li>
-                <a href="fonctions_tableau.php">Exercice : Fonctions sur les Tableaux</a>
-                <span class="desc">Fonctions remplir() (pairs aléatoires), somme() et trier().</span>
-            </li>
-        </ul>
+
+    <div class="form-container">
+        <h2>Formulaire d'inscription</h2>
+
+        <?php
+        // Affichage du message d'erreur s'il est présent dans l'URL
+        if (isset($_GET['erreur'])) {
+            echo '<div class="alert-error">' . htmlspecialchars($_GET['erreur']) . '</div>';
+        }
+        ?>
+
+        <form action="traitement.php" method="POST">
+            <!-- 1. Champ Prénom -->
+            <div class="form-group">
+                <label class="main-label" for="prenom">Prénom :</label>
+                <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom">
+            </div>
+
+            <!-- 2. Champ Nom -->
+            <div class="form-group">
+                <label class="main-label" for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" placeholder="Entrez votre nom">
+            </div>
+
+            <!-- 3. Champ Email -->
+            <div class="form-group">
+                <label class="main-label" for="email">Adresse Email :</label>
+                <input type="email" id="email" name="email" placeholder="exemple@domaine.com">
+            </div>
+
+            <!-- 4. Liste Déroulante -->
+            <div class="form-group">
+                <label class="main-label" for="pays">Pays de résidence :</label>
+                <select id="pays" name="pays">
+                    <option value="">-- Sélectionnez un pays --</option>
+                    <option value="Sénégal">Sénégal</option>
+                    <option value="France">France</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Côte d'Ivoire">Côte d'Ivoire</option>
+                    <option value="Maroc">Maroc</option>
+                </select>
+            </div>
+
+            <!-- 5. Le Sexe (Radio) -->
+            <div class="form-group">
+                <label class="main-label">Sexe :</label>
+                <div class="radio-group">
+                    <label class="radio-item">
+                        <input type="radio" name="sexe" value="Homme"> Homme
+                    </label>
+                    <label class="radio-item">
+                        <input type="radio" name="sexe" value="Femme"> Femme
+                    </label>
+                </div>
+            </div>
+
+            <!-- 6. Cinq Cases à Cocher (Checkbox) -->
+            <div class="form-group">
+                <label class="main-label">Centres d'intérêt (choisir au moins un) :</label>
+                <div class="checkbox-group">
+                    <label class="checkbox-item">
+                        <input type="checkbox" name="interets[]" value="Informatique"> Informatique
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox" name="interets[]" value="Sport"> Sport
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox" name="interets[]" value="Musique"> Musique
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox" name="interets[]" value="Lecture"> Lecture
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox" name="interets[]" value="Voyage"> Voyage
+                    </label>
+                </div>
+            </div>
+
+            <!-- Bouton de soumission -->
+            <button type="submit">Envoyer</button>
+        </form>
     </div>
+
 </body>
 </html>

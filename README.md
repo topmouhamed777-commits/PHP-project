@@ -1,9 +1,18 @@
-# TP 1 : Structure de contrôle et boucles en PHP
+# Projets et Exercices PHP
 
-Solutions simples et commentées des 11 exercices du **TP 1 - DBE 2025-2026** (Dr. Birane Koundoul).
+Solutions des exercices de PHP (TP 1, fonctions, formulaires et validation de données).
 
-## Contenu
+## Contenu du projet
 
+### Formulaire & Validation de données
+- **[index.php](index.php)** : Formulaire d'inscription complet (prénom, nom, email, liste déroulante, sexe, 5 cases à cocher) avec affichage dynamique des erreurs.
+- **[traitement.php](traitement.php)** : Traitement et validation sécurisée des données en POST avec redirection en cas d'erreur.
+
+### Fonctions sur les Tableaux
+- **[fonctions_tableau.php](fonctions_tableau.php)** : Fonctions `remplir()` (génération de nombres pairs aléatoires), `somme()` et `trier()`.
+
+### TP 1 : Structures de contrôle et boucles
+- **[menu_tp1.php](menu_tp1.php)** : Page d'accueil pour naviguer entre les exercices du TP 1.
 - **[exercice1.php](exercice1.php)** : Répétition des chiffres en triangle (1, 22, 333...).
 - **[exercice2.php](exercice2.php)** : Boucle `while` avec pas de 3 et mise en valeur conditionnelle.
 - **[exercice3.php](exercice3.php)** : Table de multiplication complète de 1 à 10 dans un tableau HTML.
@@ -15,7 +24,6 @@ Solutions simples et commentées des 11 exercices du **TP 1 - DBE 2025-2026** (D
 - **[exercice9.php](exercice9.php)** : Nombres pairs de 0 à 100 avec les trois boucles (`for`, `while`, `do...while`).
 - **[exercice10.php](exercice10.php)** : Étoiles en escalier avec double boucle.
 - **[exercice11.php](exercice11.php)** : Dessin du haut du sapin en cône sur 6 lignes avec double boucle.
-- **[index.php](index.php)** : Page d'accueil pour naviguer facilement entre tous les exercices.
 
 ## Lancement
 
