@@ -12,6 +12,13 @@ Solutions des exercices de PHP (TP 1, fonctions, formulaires et validation de do
 - **[fonctions_tableau.php](fonctions_tableau.php)** : Fonctions `remplir()` (génération de nombres pairs aléatoires), `somme()` et `trier()`.
 - **[generer_code.php](generer_code.php)** : Génération d'un code aléatoire de taille 15 (chiffres et lettres).
 
+### TP 3 : Tableaux, Formulaires, Fonctions et Sessions
+- **[tp3_panier.php](tp3_panier.php)** : Mini-application de panier d'achat en session (Dr. Birane Koundoul - UAD) :
+  - Limitation à 5 produits maximum (gérée par fonction).
+  - Réduction automatique de 2% si le total est supérieur à 25 000 FCFA.
+  - Fonctions modulaires pour les contrôles, les calculs et la session.
+  - Actions pour ajouter, vider le panier et quitter.
+
 ### TP 1 : Structures de contrôle et boucles
 - **[menu_tp1.php](menu_tp1.php)** : Page d'accueil pour naviguer entre les exercices du TP 1.
 - **[exercice1.php](exercice1.php)** : Répétition des chiffres en triangle (1, 22, 333...).

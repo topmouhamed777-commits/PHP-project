@@ -105,6 +105,10 @@
                 <a href="generer_code.php">Exercice : Code Aléatoire de Taille 15</a>
                 <span class="desc">Génération d'un code aléatoire de 15 caractères (chiffres et lettres).</span>
             </li>
+            <li>
+                <a href="tp3_panier.php">TP 3 : Mini-Application Panier d'Achat</a>
+                <span class="desc">Gestion de panier en session (max 5 produits, réduction de 2% > 25000 FCFA, fonctions et contrôles).</span>
+            </li>
         </ul>
     </div>
 </body>
