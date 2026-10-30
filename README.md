@@ -8,8 +8,9 @@ Solutions des exercices de PHP (TP 1, fonctions, formulaires et validation de do
 - **[index.php](index.php)** : Formulaire d'inscription complet (prénom, nom, email, liste déroulante, sexe, 5 cases à cocher) avec affichage dynamique des erreurs.
 - **[traitement.php](traitement.php)** : Traitement et validation sécurisée des données en POST avec redirection en cas d'erreur.
 
-### Fonctions sur les Tableaux
+### Fonctions & Algorithmes
 - **[fonctions_tableau.php](fonctions_tableau.php)** : Fonctions `remplir()` (génération de nombres pairs aléatoires), `somme()` et `trier()`.
+- **[generer_code.php](generer_code.php)** : Génération d'un code aléatoire de taille 15 (chiffres et lettres).
 
 ### TP 1 : Structures de contrôle et boucles
 - **[menu_tp1.php](menu_tp1.php)** : Page d'accueil pour naviguer entre les exercices du TP 1.

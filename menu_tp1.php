@@ -101,6 +101,10 @@
                 <a href="fonctions_tableau.php">Exercice : Fonctions sur les Tableaux</a>
                 <span class="desc">Fonctions remplir() (pairs aléatoires), somme() et trier().</span>
             </li>
+            <li>
+                <a href="generer_code.php">Exercice : Code Aléatoire de Taille 15</a>
+                <span class="desc">Génération d'un code aléatoire de 15 caractères (chiffres et lettres).</span>
+            </li>
         </ul>
     </div>
 </body>
