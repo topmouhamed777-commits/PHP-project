@@ -109,6 +109,10 @@
                 <a href="tp3_panier.php">TP 3 : Mini-Application Panier d'Achat</a>
                 <span class="desc">Gestion de panier en session (max 5 produits, réduction de 2% > 25000 FCFA, fonctions et contrôles).</span>
             </li>
+            <li>
+                <a href="TP3_PHP_MYSQL/index.php">TP 3 PHP MYSQL (Dr. Koundoul 2024-2025)</a>
+                <span class="desc">Exercices 1 (Auth session), 2 (Panier boutique) et 3 (Protection CSRF token).</span>
+            </li>
         </ul>
     </div>
 </body>

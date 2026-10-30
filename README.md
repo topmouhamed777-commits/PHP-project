@@ -12,7 +12,22 @@ Solutions des exercices de PHP (TP 1, fonctions, formulaires et validation de do
 - **[fonctions_tableau.php](fonctions_tableau.php)** : Fonctions `remplir()` (génération de nombres pairs aléatoires), `somme()` et `trier()`.
 - **[generer_code.php](generer_code.php)** : Génération d'un code aléatoire de taille 15 (chiffres et lettres).
 
-### TP 3 : Tableaux, Formulaires, Fonctions et Sessions
+### TP 3 PHP MYSQL : Sessions & Sécurité (Dr. Koundoul 2024-2025)
+Dossier complet **[TP3_PHP_MYSQL/](TP3_PHP_MYSQL/index.php)** :
+- **Exercice 1 (Connexion & Session)** :
+  - `login.php` : Formulaire de connexion.
+  - `dashboard.php` : Espace membre sécurisé avec message de bienvenue.
+  - `logout.php` : Déconnexion et destruction de session.
+- **Exercice 2 (Panier d'achat)** :
+  - `index.php` : Liste des articles avec bouton "Ajouter au panier".
+  - `panier.php` : Visualisation du panier et total.
+  - `supprimer.php` : Suppression ciblée d'un produit.
+  - `vider.php` : Vidage complet du panier.
+- **Exercice 3 (Sécurité CSRF & Token)** :
+  - `form.php` : Formulaire avec token aléatoire `bin2hex(random_bytes(32))`.
+  - `traitement.php` : Vérification du token CSRF et validation.
+
+### TP 3 : Tableaux, Formulaires, Fonctions et Sessions (2025-2026)
 - **[tp3_panier.php](tp3_panier.php)** : Mini-application de panier d'achat en session (Dr. Birane Koundoul - UAD) :
   - Limitation à 5 produits maximum (gérée par fonction).
   - Réduction automatique de 2% si le total est supérieur à 25 000 FCFA.
